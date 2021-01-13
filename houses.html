@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RMS House Numbers</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <br>
+  <div class="container-fluid">
+      <div class="navbar">
+          <div class="logo ">
+              <img src="./img/house.jpg">
+              <p ><span>R</span>ent   <span>M</span>anagement  <span>S</span>ystem</p>
+          </div>
+          <div class="nav">
+              <ul>
+                  <li><a href="#Home">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Building</a></li>
+                  <li><a href="#">House</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="title">
+          <h1>RENT MANAGEMENT SYSTEM</h1>
+      </div>
+   </div>
+  <div class="container-fluid">
+    <div id="overlay" class="overlay">
+        <form id="form" class="form">
+          <label for="">Rent for the mont of:</label>
+          <select id="month">
+             <option value="">January</option>
+             <option value="">February</option>
+             <option value="">March</option>
+             <option value="">April</option>
+             <option value="">May</option>
+             <option value="">June</option>
+             <option value="">July</option>
+             <option value="">August</option>
+             <option value="">September</option>
+             <option value="">October</option>
+             <option value="">November</option>
+             <option value="">December</option>
+            </select>
+            <br>
+          <lable>Building ID</lable>
+           <select id="building">
+             <option value="Building1">Building 1</option>
+             <option value="Building2">Building 2</<option>
+           </select>
+           <br>
+          <label id="name">Tenant Name</label>
+            <input type="text" name="" value=""placeholder="Enter Name" required>
+          <br>
+          <label id="rent">Rent</label>
+            <input type="number" name="" value="" placeholder="Enter House Rent" required>
+          <br>
+          <label id="email">Email</label>
+            <input type="text" name="" value="" placeholder="Enter your email" required>
+          <br>
+          <label id="amount">Amount Paid</label>
+            <input type="text" name="" value="" placeholder="Amount Paid" required>
+          <br>
+          <label id="balance">Balance</label>
+            <input type="number" name="" value="" placeholder="Rent Balance" required>
+          <input type="submit" name="submit" class="submit" placeholder="Submit" value="Submit">
+       </form>
+     </div>
+   </div>
+</body>
+</html>
