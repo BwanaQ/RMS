@@ -207,3 +207,10 @@ select{
   cursor: pointer;
   font-weight: bold;
 }
+.row{
+  margin: auto;
+  background: #FFFFFF;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+}
