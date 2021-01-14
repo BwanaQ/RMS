@@ -73,9 +73,9 @@ span{
 }
 .section1 .row .col-md-6 img{
     width: 100%;
-    border-radius: 0.2em; 
+    border-radius: 0.2em;
 }
-.section1 .row .col-md-6 :last-child{ 
+.section1 .row .col-md-6 :last-child{
     position: relative;
 }
 .section1 .row .col-md-6 .panel{
@@ -95,9 +95,9 @@ span{
 .section2 .row .col-md-6 img{
     width: 110%;
     height: 140%;
-    border-radius: 0.2em; 
+    border-radius: 0.2em;
 }
-.section2 .row .col-md-6 :last-child{ 
+.section2 .row .col-md-6 :last-child{
     position: relative;
 }
 .section2 .row .col-md-6 .panel{
@@ -117,9 +117,9 @@ span{
 .section3 .row .col-md-6 img{
     width: 110%;
     height: 140%;
-    border-radius: 0.2em; 
+    border-radius: 0.2em;
 }
-.section3 .row .col-md-6 :last-child{ 
+.section3 .row .col-md-6 :last-child{
     position: relative;
 }
 .section3 .row .col-md-6 .panel{
@@ -160,3 +160,73 @@ footer .social{
 .dev{
     color: palegoldenrod;
 }
+
+#form{
+  margin: auto;
+  background: #FFFFFF;
+  max-width: 660px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+body{
+  background-image: url('../img/Apart.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.overlay{
+  margin: auto;
+  background: #FFFFFF;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+input{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+select{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.submit{
+  background-color: yellow;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.row{
+  margin: auto;
+  background: #FFFFFF;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  text-align: left;
+}
+ .show-onclick{
+   display: none;
+ }
