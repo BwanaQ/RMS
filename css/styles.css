@@ -210,7 +210,23 @@ select{
 .row{
   margin: auto;
   background: #FFFFFF;
-  max-width: 300px;
+  max-width: 500px;
   padding: 10px;
   border-radius: 4px;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  text-align: left;
+}
+ .show-onclick{
+   display: none;
+ }
