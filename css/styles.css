@@ -158,3 +158,12 @@ footer .social{
 .dev{
     color: palegoldenrod;
 }
+label{
+    font-weight: 700;
+    padding-top: 10px;
+    align-content: center;
+}
+.btn{
+    background-color: black;
+    color: blanchedalmond;
+}
