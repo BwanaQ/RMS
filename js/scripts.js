@@ -1,9 +1,10 @@
-$(document).ready(function() {
-  $("form#add-building").submit(function(event) {
+var jq =$.noConflict();
+jq(document).ready(function() {
+  jq("form#add-building").submit(function(event) {
     event.preventDefault();
     //capture values from form
-    var inputtedBuildingID= $("input#buildingID").val();
-    var inputtedBuildingName = $("input#buildingName").val();
+    var inputtedBuildingID= jq("input#buildingID").val();
+    var inputtedBuildingName = jq("input#buildingName").val();
   
     //logic from inputs
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
     "<td>" + inputtedBuildingName +"</td>"+
     "</tr>";
 
-    $("#buildings").append(building);
+    jq("#buildings").append(building);
   });
 
 }); 
