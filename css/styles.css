@@ -16,12 +16,11 @@ h1{
 .logo{
     margin-left: 2vmin;
     border-radius: 8px;
+    display: inline;
 }
 span{
     color: Red;
     font-weight: 700;
-    font-family: 'Sofia', cursive;
-    font-style: italic;
     padding-right: 5px;
 }
 .collapse{
@@ -58,8 +57,9 @@ span{
 .nav ul li a:hover{
     color: black;
     background-color: #fff;
-    text-transform: uppercase;
-    padding: 5vmin 5vmin 8vmin 5vmin;
+    padding-top: 15px;
+    border-radius: 11px;
+    padding-bottom: 18px;
     font-weight: 700;
     text-decoration: none;
 }
@@ -67,77 +67,6 @@ span{
     height: 130%;
     width: 100%;
 }
-/* section1 */
-.section1{
-    padding: 20vmin 0;
-}
-.section1 .row .col-md-6 img{
-    width: 100%;
-    border-radius: 0.2em;
-}
-.section1 .row .col-md-6 :last-child{
-    position: relative;
-}
-.section1 .row .col-md-6 .panel{
-    position: absolute;
-    top: 5vmin;
-    left: -18vmin;
-    background: whitesmoke;
-    border-radius: 3px;
-    text-align: left;
-    padding: 13vmin 5vmin 13vmin 10vmin;
-    box-shadow: 0 25px 42px rgba(0,0,0,0.2);
-}
-/* section2 */
-.section2{
-    padding: 20vmin 0;
-}
-.section2 .row .col-md-6 img{
-    width: 110%;
-    height: 140%;
-    border-radius: 0.2em;
-}
-.section2 .row .col-md-6 :last-child{
-    position: relative;
-}
-.section2 .row .col-md-6 .panel{
-    position: absolute;
-    top: 4vmin;
-    left: -18vmin;
-    background: whitesmoke;
-    border-radius: 3px;
-    text-align: left;
-    padding: 13vmin 5vmin 12vmin 10vmin;
-    box-shadow: 0 25px 42px rgba(0,0,0,0.2);
-}
-/* section3 */
-.section3{
-    padding: 20vmin 0;
-}
-.section3 .row .col-md-6 img{
-    width: 110%;
-    height: 140%;
-    border-radius: 0.2em;
-}
-.section3 .row .col-md-6 :last-child{
-    position: relative;
-}
-.section3 .row .col-md-6 .panel{
-    position: absolute;
-    top: 2vmin;
-    left: -13vmin;
-    background: whitesmoke;
-    border-radius: 3px;
-    text-align: left;
-    padding: 10vmin 5vmin 11vmin 10vmin;
-    box-shadow: 0 25px 42px rgba(0,0,0,0.2);
-}
-/* button */
-.btn{
-    text-align: center;
-    align-items: center;
-}
-/* footer */
 footer{
     background-color: black;
 }
@@ -169,10 +98,11 @@ footer .social{
   border-radius: 4px;
 }
 
-body{
+.body{
   background-image: url('../img/Apart.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -10px;
 
 }
 .overlay{
@@ -202,7 +132,8 @@ select{
   margin: 10px 0;
 }
 .submit{
-  background-color: yellow;
+  background-color: rgb(27, 27, 2);
+  color: #fff;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
