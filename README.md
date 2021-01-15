@@ -18,7 +18,7 @@
 - JAVASCRIPT
 
 ## LIVE LINK
-* http://bwanaq.github.io/RMScc
+* https://bwanaq.github.io/RMS/
 
 ## KNOWN BUGS
 -
