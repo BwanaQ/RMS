@@ -20,15 +20,13 @@ h1{
 span{
     color: Red;
     font-weight: 700;
-    font-family: 'Sofia', cursive;
-    font-style: italic;
     padding-right: 5px;
 }
 .collapse{
     margin-left: 70vmin;
 }
 .about p{
-    text-align: left;
+    text-align: center;
     margin-top: 8vmin;
 }
 .about h1{
@@ -58,8 +56,9 @@ span{
 .nav ul li a:hover{
     color: black;
     background-color: #fff;
-    text-transform: uppercase;
-    padding: 5vmin 5vmin 8vmin 5vmin;
+    padding-top: 15px;
+    border-radius: 11px;
+    padding-bottom: 18px;
     font-weight: 700;
     text-decoration: none;
 }
@@ -85,7 +84,7 @@ span{
     background: whitesmoke;
     border-radius: 3px;
     text-align: left;
-    padding: 13vmin 5vmin 13vmin 10vmin;
+    padding: 10vmin 5vmin 13vmin 10vmin;
     box-shadow: 0 25px 42px rgba(0,0,0,0.2);
 }
 /* section2 */
@@ -102,17 +101,18 @@ span{
 }
 .section2 .row .col-md-6 .panel{
     position: absolute;
-    top: 4vmin;
+    top: 5vmin;
     left: -18vmin;
     background: whitesmoke;
     border-radius: 3px;
     text-align: left;
-    padding: 13vmin 5vmin 12vmin 10vmin;
+    padding: 4vmin 5vmin 8vmin 10vmin;
     box-shadow: 0 25px 42px rgba(0,0,0,0.2);
 }
 /* section3 */
 .section3{
     padding: 20vmin 0;
+    margin-bottom: 20vmin;
 }
 .section3 .row .col-md-6 img{
     width: 110%;
@@ -124,33 +124,30 @@ span{
 }
 .section3 .row .col-md-6 .panel{
     position: absolute;
-    top: 2vmin;
+    top: 5vmin;
     left: -13vmin;
     background: whitesmoke;
     border-radius: 3px;
     text-align: left;
-    padding: 10vmin 5vmin 11vmin 10vmin;
+    padding: 7vmin 5vmin 8vmin 7vmin;
     box-shadow: 0 25px 42px rgba(0,0,0,0.2);
-}
-/* button */
-.btn{
-    text-align: center;
-    align-items: center;
 }
 /* footer */
 footer{
     background-color: black;
 }
+footer .social{
+    color: palegoldenrod;
+}
 footer h2{
     padding-top: 10px;
     color: wheat;
-    font-family: 'Kalam', sans-serif;
-    text-align: center;
+    font-family: 'Acme', sans-serif;
 }
 footer .social i{
     padding-right: 10px;
     color: red;
-    height: 30vmin;
+    height: 2vmin;
 }
 footer .social{
     left: 25px;
@@ -160,75 +157,12 @@ footer .social{
 .dev{
     color: palegoldenrod;
 }
-
-#form{
-  margin: auto;
-  background: #FFFFFF;
-  max-width: 660px;
-  padding: 10px;
-  border-radius: 4px;
+label{
+    font-weight: 700;
+    padding-top: 10px;
+    align-content: center;
 }
-
-body{
-  background-image: url('../img/Apart.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.btn{
+    background-color: black;
+    color: blanchedalmond;
 }
-.overlay{
-  margin: auto;
-  background: #FFFFFF;
-  opacity: .8;
-  max-width: 800px;
-  padding: 10px;
-  border-radius: 4px;
-
-}
-input{
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  margin: 10px 0;
-}
-
-select{
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  margin: 10px 0;
-}
-.submit{
-  background-color: yellow;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-}
-.row{
-  margin: auto;
-  background: #FFFFFF;
-  opacity: .8;
-  max-width: 800px;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 15px;
-}
-
-th {
-  text-align: left;
-}
- .show-onclick{
-   display: none;
- }

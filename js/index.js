@@ -30,12 +30,18 @@ function Payments(id, houseId, month, amount, balance){
 
 
 
-const parentRow = document.getElementById("row")
+const parentSelect = document.getElementById("landlord")
 
 fetch('https://jsonplaceholder.typicode.com/users').then((response)=>response.json())
   .then((data)=>{
     data.map((userItem)=>{
-      const column = document.createElement("div");
+      console.log(userItem)
+      const option = document.createElement("option")
+      option.value= userItem["name"];
+      option.text = userItem["name"];
+      option.id = "landlord";
+      parentSelect.appendChild(option)
+     /* const column = document.createElement("div");
       column.className = "col-md-4 mt-4 mr-3";
   
       const card = document.createElement("div");
@@ -77,7 +83,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response)=>response.js
       portfolios.push(newPortfolio);
       console.log(portfolios);
       console.log(newPortfolio); 
-      parentRow.appendChild(column);
+      parentRow.appendChild(column);*/
 
     });
   });

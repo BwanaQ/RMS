@@ -1,7 +1,10 @@
+function Payment(){
+
+}
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
-
+    var inputtedLandlord = $("select#landlord").val();
     var inputtedHouseID= $("select#houseID").val();
     var inputtedMonth = $("select#month").val();
     var inputtedPaidOn = $("#paid").val();
@@ -19,6 +22,7 @@ $(document).ready(function() {
     }
 
     var payment="<tr style='color:"+color+"'>"+
+    "<td>"+inputtedLandlord+"</td>"+
     "<td>" + inputtedHouseID +"</td>"+
     "<td>" + inputtedMonth +"</td>"+
     "<td>" + rentDue +"</td>"+

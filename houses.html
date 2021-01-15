@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,94 +9,99 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./js/scripts.js"></script>
 </head>
+
 <body>
   <br>
   <div class="container-fluid">
-      <div class="navbar">
-          <div class="logo ">
-              <img src="./img/house.jpg">
-              <p ><span>R</span>ent   <span>M</span>anagement  <span>S</span>ystem</p>
-          </div>
-          <div class="nav">
-              <ul>
-                  <li><a href="#Home">Home</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Building</a></li>
-                  <li><a href="#">House</a></li>
-              </ul>
-          </div>
+    <div class="navbar">
+      <div class="logo ">
+        <img src="./img/house.jpg">
+        <p><span>R</span>ent <span>M</span>anagement <span>S</span>ystem</p>
       </div>
-      <div class="title">
-          <h1>RENT MANAGEMENT SYSTEM</h1>
-      </div>
-   </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="houses.html">Make Payment</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="title">
+      <h1>RENT MANAGEMENT SYSTEM</h1>
+    </div>
+  </div>
   <div class="container-fluid">
 
     <div id="overlay" class="overlay">
-        <form id="form">
-          <label for="Month">Rent for the month of:</label>
-          <select class="form-control" id="month">
-             <option value="">January</option>
-             <option value="">February</option>
-             <option value="">March</option>
-             <option value="">April</option>
-             <option value="">May</option>
-             <option value="">June</option>
-             <option value="">July</option>
-             <option value="">August</option>
-             <option value="">September</option>
-             <option value="">October</option>
-             <option value="">November</option>
-             <option value="">December</option>
-            </select>
-            <br>
-          <label for="BuildingID">BuildingID</label>
-           <select id="building">
-             <option value="Building1">Building 1</option>
-             <option value="Building2">Building 2</<option>
-           </select>
-           <br>
-           <label for="houseID">Select House</label>
-           <select class="form-control" id="houseID">
-             <option value="1">House 1</option>
-             <option value="2">House 2</option>
-             <option value="3">House 3</option>
-             <option value="4">House 4</option>
-             <option value="5">House 5</option>
-           </select>
-           <br>
-           <label for="paid">Paid on:</label>
-           <input type="date" id="paid" name="paid" value="2021-01-13">
-          <br>
-          <label>Amount Paid</label>
-            <input type="text" id="amount" name="" value="" placeholder="Amount Paid" required>
-          <br>
-          <input type="submit" name="submit" class="submit" placeholder="Submit" value="Submit">
-          <br><br>
-        </form>
-      </div>
+      <form id="form">
+        
+        <label for="Month">Rent for the month of:</label>
+        <select class="form-control" id="month">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <br>
+        <label for="Landlord">Landlord:</label>
+        <select class="form-control" id="landlord">
+        </select>
+        <br>
+        
+        <label for="BuildingID">BuildingID</label>
+        <select id="building">
+          <option value="Building1">Building 1</option>
+          <option value="Building2">Building 2<option>
+        </select>
+        <br>
+        <label for="houseID">Select House</label>
+        <select class="form-control" id="houseID">
+          <option value="1">House 1</option>
+          <option value="2">House 2</option>
+          <option value="3">House 3</option>
+          <option value="4">House 4</option>
+          <option value="5">House 5</option>
+        </select>
+        <br>
+        <label for="paid">Paid on:</label>
+        <input type="date" id="paid" name="paid" value="2021-01-13">
+        <br>
+        <label>Amount Paid</label>
+        <input type="text" id="amount" name="" value="" placeholder="Amount Paid" required>
+        <br>
+        <input type="submit" name="submit" class="submit" placeholder="Submit" value="Submit">
+        <br><br>
+      </form>
     </div>
-    <br>
-          <div class="row text-center">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">House ID</th>
-                  <th scope="col">Month</th>
-                  <th scope="col">Rent Due</th>
-                  <th scope="col">Amount Paid</th>
-                  <th scope="col">Balance<th>
+  </div>
+  <br>
+  <div class="row text-center">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Landlord</th>
+          <th scope="col">House ID</th>
+          <th scope="col">Month</th>
+          <th scope="col">Rent Due</th>
+          <th scope="col">Amount Paid</th>
+          <th scope="col">Date Paid</th>
+          <th scope="col">Balance</th>
+        </tr>
+      </thead>
+      <tbody id="payments">
 
+      </tbody>
+    </table>
 
-
-                </tr>
-              </thead>
-              <tbody id="payments">
-
-              </tbody>
-            </table>
-
-          </div>
-
+  </div>
+  <script src="./js/index.js"></script>
 </body>
+
 </html>
