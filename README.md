@@ -21,9 +21,8 @@
 * https://bwanaq.github.io/RMS/
 
 ## KNOWN BUGS
--
--
--
+- Connecting with some members was a challenge
+- Intergrating the fetch API
 
 ## LICENSE 
 - MIT License <br>
